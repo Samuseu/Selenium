@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'Selenium'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.seleniumhq.selenium:selenium-java:4.16.1',
+            'org.junit.jupiter:junit-jupiter:5.10.1'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
