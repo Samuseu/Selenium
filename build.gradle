@@ -9,13 +9,23 @@ repositories {
     mavenCentral()
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 dependencies {
-    implementation('org.seleniumhq.selenium:selenium-java:4.16.1',
-            'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation(
+            'org.junit.jupiter:junit-jupiter-api:5.8.1',
+            'org.seleniumhq.selenium:selenium-java:3.141.59',
+            'io.github.bonigarcia:webdrivermanager:5.2.1',
+            'org.aeonbits.owner:owner:1.0.4',
+            'org.assertj:assertj-core:3.23.1'
     )
-    testImplementation 'io.qameta.allure:allure-junit5:2.25.0'
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
 }
 
 test {
     useJUnitPlatform()
+    //-PbaseUrl=https://github.com -Pbrowser=FIREFOX
+    systemProperties(System.getProperties())
 }
