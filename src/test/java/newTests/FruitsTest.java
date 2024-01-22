@@ -1,8 +1,8 @@
 package newTests;
 
+import config.FruitsConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Test;
-import qa.guru.owner.config.FruitsConfig;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

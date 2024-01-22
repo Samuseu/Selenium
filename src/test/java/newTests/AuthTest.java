@@ -2,8 +2,7 @@ package newTests;
 
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Test;
-import qa.guru.owner.config.AuthConfig;
-
+import config.AuthConfig;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;

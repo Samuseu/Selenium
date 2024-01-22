@@ -2,8 +2,8 @@ package newTests;
 
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Test;
-import qa.guru.owner.config.Browser;
-import qa.guru.owner.config.TypeConfig;
+import config.Browser;
+import config.TypeConfig;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

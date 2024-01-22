@@ -1,9 +1,8 @@
 package newTests;
 
+import config.MobileConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Test;
-import qa.guru.owner.config.MobileConfig;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class MobileTest {
